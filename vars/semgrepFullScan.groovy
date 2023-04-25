@@ -1,4 +1,4 @@
-def semgrep() {
+def call() {
   sh '''docker pull returntocorp/semgrep && \
             docker run \
             -e SEMGREP_APP_TOKEN=$SEMGREP_APP_TOKEN \
