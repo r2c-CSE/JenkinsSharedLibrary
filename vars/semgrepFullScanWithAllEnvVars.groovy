@@ -10,5 +10,5 @@ def call() {
             -e SEMGREP_PR_ID=$SEMGREP_PR_ID \
             -e SEMGREP_REPO_NAME=$SEMGREP_REPO_NAME \
             -v "$(pwd):$(pwd)" --workdir $(pwd) \
-            returntocorp/semgrep semgrep ci'''
+            returntocorp/semgrep semgrep ci --verbose'''
 }
