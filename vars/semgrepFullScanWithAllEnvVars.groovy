@@ -10,5 +10,5 @@ def call() {
             -e SEMGREP_PR_ID=$SEMGREP_PR_ID \
             -e SEMGREP_REPO_NAME=$SEMGREP_REPO_NAME \
             -v "$(pwd):$(pwd)" --workdir $(pwd) \
-            returntocorp/semgrep semgrep ci --baseline-commit=$(git merge-base trunk HEAD) || [ $? != 1 ]'''
+            returntocorp/semgrep semgrep ci'''
 }
