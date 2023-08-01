@@ -8,6 +8,7 @@
  * @return nil
  */
 def call(String repository, String commitOrBranch, int depth, String mainBranchName = "master", String url = "git@github.com:r2c-CSE") {
+        print("Repo: " + repository)
         def timeout = 15 // in minutes
         def extensions = [
             [$class: 'RelativeTargetDirectory', relativeTargetDir: repository],
